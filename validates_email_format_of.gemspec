@@ -4,8 +4,8 @@ spec = Gem::Specification.new do |s|
   s.summary = 'Validate e-mail addresses against RFC 2822 and RFC 3696.'
   s.description = s.summary
   s.extra_rdoc_files = ['README.rdoc', 'CHANGELOG.rdoc', 'MIT-LICENSE']
-  s.test_files = FileList['test/**/*.rb', 'test/**/*.yml'].to_a
-  s.files = FileList['MIT-LICENSE', '*.rb', '*.rdoc', 'lib/**/*.rb', 'test/**/*.rb', 'test/**/*.yml'].to_a
+  s.test_files = Dir['test/**/*.rb', 'test/**/*.yml']
+  s.files = Dir['MIT-LICENSE', '*.rb', '*.rdoc', 'lib/**/*.rb', 'test/**/*.rb', 'test/**/*.yml']
   s.require_path = 'lib'
   s.has_rdoc = true
   s.rdoc_options << '--title' <<  'validates_email_format_of'
