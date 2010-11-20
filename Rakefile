@@ -1,6 +1,3 @@
-require 'rake/testtask'
-require 'rake/rdoctask'
-
 desc 'Default: run unit tests.'
 task :default => [:clean_log, :test]
 
