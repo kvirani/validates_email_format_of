@@ -1,5 +1,3 @@
-require 'rake'
-
 spec = Gem::Specification.new do |s|
   s.name = 'validates_email_format_of'
   s.version = '1.4.2'
